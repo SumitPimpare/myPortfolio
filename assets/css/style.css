@@ -217,7 +217,7 @@ a:hover {
 
 /*------/ Socials /------*/
 .socials {
-  padding: 1.5rem 0;
+  padding: 0.8rem;
 }
 
 .socials ul li {
@@ -478,13 +478,13 @@ a:hover {
   letter-spacing: 1px;
 }
 
-#header .logo a {
+/* #header .logo a {
   color: #fff;
-}
+} */
 
-#header .logo img {
+/* #header .logo img {
   max-height: 45px;
-}
+} */
 
 #header.header-scrolled {
   background: #f59d2a;
@@ -1693,27 +1693,20 @@ section {
   color: white;
   font-size: 14px;
   text-align: center;
-  padding: 3px 0;
 }
 
 #footer h3 {
-  font-size: 36px;
+  font-size: 32px;
   font-weight: 500;
   position: relative;
   font-family: 'Prompt', sans-serif;
-  padding: 0;
-  margin: 0 0 5px 0;
+  margin: 2px 0 5px 0;
 }
 
 #footer p {
   font-size: 15;
   font-style: italic;
-  padding: 0;
-  margin: 0 0 4px 0;
-}
-
-#footer .social-links {
-  margin: 0 0 4px 0;
+  margin: 0 0 1px 0;
 }
 
 #footer .social-links a {
@@ -1738,10 +1731,6 @@ section {
   text-decoration: none;
 }
 
-#footer .copyright {
-  margin: 0 0 5px 0;
-}
-
 #footer .credits {
   font-size: 13px;
 }
@@ -1760,21 +1749,19 @@ section {
   background-color: whitesmoke;
 }
 
-/* [1] The container  */
-.img-hover-zoom {
-  height: 300px;  
-  /* [1.1] Set it as per your need  */
-  overflow: hidden; 
-  /* [1.2] Hide the overflowing of child elements */
+.zoom {
+  transition: transform .6s; 
+  width: 308px;
+  height: 400px;
+  margin: 0 auto;
+  cursor: zoom-in;
+  overflow: hidden;
 }
 
-/* [2] Transition property for smooth transformation of images */
-.img-hover-zoom img {
-  transition: transform .5s ease;
+.zoom:hover {
+  transform: scale(1.2); 
 }
 
-/* [3] Finally, transforming the image when container gets hovered */
-.img-hover-zoom:hover img {
-  transform: scale(1.5);
+img {
+  border-style: solid;
 }
- 
